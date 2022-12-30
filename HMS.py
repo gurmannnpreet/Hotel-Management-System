@@ -178,7 +178,7 @@ def confirm_room():
                 
         #Adding permament data to mySQL database
         mydb = mysql.connector.connect(host = 'localhost', user = 'root',
-                                      password = 'Gurmanpreet@22', database = 'hotel')   
+                                      password = 'YourPassword', database = 'hotel')   
         mycursor = mydb.cursor()
         dataTpl = tuple(data)
         query = "INSERT INTO VISITORDB VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" 
